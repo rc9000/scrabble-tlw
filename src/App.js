@@ -11,11 +11,19 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Scrabble Two Letter Words by Alphanumeric Order</h1>
-        <span class="flist charlist">
-        Jump to first letter:&nbsp;<br></br> 
+      <span class="flist charlist">
+        Jump to words with first letter: 
         {alphabet.map(function(name, index){
           var anch = "#f_" + name;
-          return <a href={anch}>{name} ({anch}) &nbsp;<br></br></a>
+          return <a href={anch}>{name}&nbsp;</a>
+        })}
+      </span>
+      <p/>
+      <span class="clist charlist">
+        Jump to words containing letter:
+        {alphabet.map(function(name, index){
+          var anch = "#c_" + name;
+          return <a href={anch}>{name}&nbsp;</a>
         })}
       </span>
 

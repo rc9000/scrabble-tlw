@@ -7,7 +7,6 @@ class ListByFirst extends Component {
     var anchorSet = {};
 
     return (
-      <div className="App">
             <ul>
                 {dict.map(function(name, index){
                     var anch = "";
@@ -17,10 +16,10 @@ class ListByFirst extends Component {
                       anch = "f_" + name.word.charAt(0);
                       anchorSet[letter] = 1;
                     }
-                    return <li key="{name.word}" id={anch}><a href="" name={anch}>{name.word}</a></li>;
+                    return <li key="{name.word}" id={anch}>{name.word}</li>;
                   })}
            </ul>      
-      </div>     
+ 
     );
   }
 }

@@ -17,10 +17,11 @@ class ListByContained extends Component {
     return (
       <span>
       {alphabet.map(function(name, index){
-          return <span><h3 key="lbc_{name}">{name}</h3>
+          var anch = "c_" + name;
+          return <span><h3 id={anch} key="lbc_{name}">{name}</h3>
           <ul>
-            {cStruct[name].map(function(name, index){
-              return <li>{name.word}</li>
+            {cStruct[name].map(function(letter, index){
+              return <li>{letter.word}</li>
             })}
             </ul>
           </span>
