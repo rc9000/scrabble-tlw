@@ -21,7 +21,7 @@ class ListByContained extends Component {
           return <span><h3 id={anch} key="lbc_{name}">{name}</h3>
           <ul>
             {cStruct[name].map(function(letter, index){
-              return <li>{letter.word}</li>
+              return <li><em class="word">{letter.word}</em>  <em class="meaning">{letter.meaning}</em></li>
             })}
             </ul>
           </span>

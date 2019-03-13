@@ -10,7 +10,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Scrabble Two Letter Words by Alphanumeric Order</h1>
+        <h1>Scrabble Two Letter Words Directory</h1>
       <span class="flist charlist">
         Jump to words with first letter: 
         {alphabet.map(function(name, index){
@@ -27,10 +27,10 @@ class App extends Component {
         })}
       </span>
 
-        <h2>By First</h2>
+        <h2>By First Letter</h2>
         <ListByFirst></ListByFirst>
 
-        <h2>By Contained</h2>
+        <h2>By Containing Letter</h2>
         <ListByContained></ListByContained>
 
         

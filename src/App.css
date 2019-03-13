@@ -8,6 +8,17 @@
   pointer-events: none;
 }
 
+.meaning {
+  margin-left: 2em;
+}
+
+.word {
+  margin-left: 1em;
+  font-family: monospace;
+  font-size: large;
+  font-style: normal;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
