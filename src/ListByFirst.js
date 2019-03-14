@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import { loadDict } from './Util'
 
 class ListByFirst extends Component {
   render() {
-    var dict = window.dict;
+    var dict = loadDict();
+    
     dict.sort((a, b) => (a.word > b.word) ? 1 : -1);
     var anchorSet = {};
 
@@ -17,7 +18,7 @@ class ListByFirst extends Component {
                       anch = "f_" + name.word.charAt(0);
                       anchorSet[letter] = 1;
                     }
-                    return <li key="{name.word}" id={anch}><em class="word">{name.word}</em> <em class="meaning">{name.meaning}</em></li>;
+                    return <li key="{name.word}" id={anch}><em class="word">{name.word} {name.scoreF}</em> <em class="meaning">{name.meaning}</em></li>;
                   })}
            </ul>      
  

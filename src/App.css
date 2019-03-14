@@ -18,6 +18,7 @@
   font-size: large;
   font-style: normal;
 }
+ul {list-style-type: circle;}
 
 .menuitem {
   min-width: 12em;
