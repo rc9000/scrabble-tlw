@@ -19,6 +19,12 @@
   font-style: normal;
 }
 
+.menuitem {
+  min-width: 12em;
+  width: 12em;
+  float: left;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
